@@ -7,7 +7,4 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface Superpowered: NSObject
-
-@end
+#import "SuperpoweredWrapped.h"

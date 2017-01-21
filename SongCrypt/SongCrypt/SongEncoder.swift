@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class songEncoder: NSObject {
+class SongEncoder: NSObject {
     var superpowered:Superpowered!
     
     override init() {
@@ -18,6 +18,10 @@ class songEncoder: NSObject {
     func startEncoding() {
     
     
+    }
+    
+    func togglePlayback() {
+        superpowered.togglePlayback()
     }
     
 }
