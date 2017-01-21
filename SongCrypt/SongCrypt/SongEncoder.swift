@@ -7,9 +7,17 @@
 //
 
 import Foundation
-class songEncoder: NSObject{
+class songEncoder: NSObject {
+    var superpowered:Superpowered!
+    
+    override init() {
+        superpowered = Superpowered()
+        
+    }
+    
+    func startEncoding() {
     
     
-    
+    }
     
 }
