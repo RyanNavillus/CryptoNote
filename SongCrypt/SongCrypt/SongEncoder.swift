@@ -12,7 +12,7 @@ class SongEncoder: NSObject {
     
     override init() {
         superpowered = Superpowered()
-        
+        //superpowered.toggle()
     }
     
     func startEncoding() {
@@ -24,4 +24,7 @@ class SongEncoder: NSObject {
         superpowered.togglePlayback()
     }
     
+    func toggle() {
+        superpowered.toggle()
+    }
 }

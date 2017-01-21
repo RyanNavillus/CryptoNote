@@ -24,6 +24,7 @@ class ViewController: UIViewController {
 
     
     @IBAction func togglePlayPause(_ sender: UIButton) {
+        songEncoder.toggle()
         songEncoder.togglePlayback()
         print("Hi");
     }

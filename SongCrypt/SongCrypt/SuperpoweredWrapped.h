@@ -16,6 +16,7 @@
 }
 -(id)init;
 -(void)togglePlayback;
+-(void)toggle;
 @end
 
 #endif /* SuperpoweredWrapped_h */

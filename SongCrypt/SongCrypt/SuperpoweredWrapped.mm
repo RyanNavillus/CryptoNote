@@ -47,6 +47,14 @@
 
 - (void)togglePlayback { // Play/pause.
     player->togglePlayback();
+    if(player->playing == YES)
+    {
+        NSLog(@"Playing\n");
+
+    } else {
+        NSLog(@"Not playing\n");
+
+    }
 }
 
 - (void)seekTo:(float)percent {
