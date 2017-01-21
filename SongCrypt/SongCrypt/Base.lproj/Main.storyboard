@@ -33,7 +33,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="PlayPauseButton" destination="cgT-XF-upM" id="ks0-nF-DS2"/>
+                        <outlet property="playPause" destination="cgT-XF-upM" id="09s-Sx-fNX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

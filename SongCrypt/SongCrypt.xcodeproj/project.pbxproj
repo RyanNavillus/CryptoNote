@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B19ED141E3362E9006BBA93 /* libSuperpoweredAudioIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19ED061E3362E9006BBA93 /* libSuperpoweredAudioIOS.a */; };
 		3B19ED151E3362E9006BBA93 /* SuperpoweredIOSAudioIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B19ED0F1E3362E9006BBA93 /* SuperpoweredIOSAudioIO.mm */; };
+		3B19ED221E3365E8006BBA93 /* libSuperpoweredAudioIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19ED061E3362E9006BBA93 /* libSuperpoweredAudioIOS.a */; };
+		3B19ED2D1E33667C006BBA93 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19ED241E33667C006BBA93 /* Accelerate.framework */; };
+		3B19ED2E1E33667C006BBA93 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19ED251E33667C006BBA93 /* AudioToolbox.framework */; };
+		3B19ED2F1E33667C006BBA93 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19ED261E33667C006BBA93 /* AVFoundation.framework */; };
+		3B19ED301E33667C006BBA93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19ED271E33667C006BBA93 /* CoreGraphics.framework */; };
+		3B19ED311E33667C006BBA93 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19ED281E33667C006BBA93 /* CoreMedia.framework */; };
+		3B19ED321E33667C006BBA93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19ED291E33667C006BBA93 /* Foundation.framework */; };
+		3B19ED331E33667C006BBA93 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19ED2A1E33667C006BBA93 /* MediaPlayer.framework */; };
+		3B19ED341E33667C006BBA93 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19ED2B1E33667C006BBA93 /* QuartzCore.framework */; };
+		3B19ED351E33667C006BBA93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B19ED2C1E33667C006BBA93 /* UIKit.framework */; };
 		3BA57F1F1E3322370002015D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA57F141E3322370002015D /* AppDelegate.swift */; };
 		3BA57F201E3322370002015D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA57F151E3322370002015D /* Assets.xcassets */; };
 		3BA57F211E3322370002015D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA57F161E3322370002015D /* LaunchScreen.storyboard */; };
@@ -35,6 +44,15 @@
 		3B19ED111E3362E9006BBA93 /* SuperpoweredReverb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredReverb.h; sourceTree = "<group>"; };
 		3B19ED121E3362E9006BBA93 /* SuperpoweredRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredRoll.h; sourceTree = "<group>"; };
 		3B19ED131E3362E9006BBA93 /* SuperpoweredSimple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredSimple.h; sourceTree = "<group>"; };
+		3B19ED241E33667C006BBA93 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		3B19ED251E33667C006BBA93 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3B19ED261E33667C006BBA93 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3B19ED271E33667C006BBA93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3B19ED281E33667C006BBA93 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3B19ED291E33667C006BBA93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3B19ED2A1E33667C006BBA93 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3B19ED2B1E33667C006BBA93 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3B19ED2C1E33667C006BBA93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3B9CADC11E331D54009DBA39 /* SongCrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongCrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA57F141E3322370002015D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BA57F151E3322370002015D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,7 +74,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B19ED141E3362E9006BBA93 /* libSuperpoweredAudioIOS.a in Frameworks */,
+				3B19ED2D1E33667C006BBA93 /* Accelerate.framework in Frameworks */,
+				3B19ED2E1E33667C006BBA93 /* AudioToolbox.framework in Frameworks */,
+				3B19ED2F1E33667C006BBA93 /* AVFoundation.framework in Frameworks */,
+				3B19ED301E33667C006BBA93 /* CoreGraphics.framework in Frameworks */,
+				3B19ED311E33667C006BBA93 /* CoreMedia.framework in Frameworks */,
+				3B19ED321E33667C006BBA93 /* Foundation.framework in Frameworks */,
+				3B19ED331E33667C006BBA93 /* MediaPlayer.framework in Frameworks */,
+				3B19ED341E33667C006BBA93 /* QuartzCore.framework in Frameworks */,
+				3B19ED351E33667C006BBA93 /* UIKit.framework in Frameworks */,
+				3B19ED221E3365E8006BBA93 /* libSuperpoweredAudioIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +111,29 @@
 			path = Superpowered;
 			sourceTree = "<group>";
 		};
+		3B19ED231E33667C006BBA93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B19ED241E33667C006BBA93 /* Accelerate.framework */,
+				3B19ED251E33667C006BBA93 /* AudioToolbox.framework */,
+				3B19ED261E33667C006BBA93 /* AVFoundation.framework */,
+				3B19ED271E33667C006BBA93 /* CoreGraphics.framework */,
+				3B19ED281E33667C006BBA93 /* CoreMedia.framework */,
+				3B19ED291E33667C006BBA93 /* Foundation.framework */,
+				3B19ED2A1E33667C006BBA93 /* MediaPlayer.framework */,
+				3B19ED2B1E33667C006BBA93 /* QuartzCore.framework */,
+				3B19ED2C1E33667C006BBA93 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B9CADB81E331D54009DBA39 = {
 			isa = PBXGroup;
 			children = (
 				3B19ED051E3362E9006BBA93 /* Superpowered */,
 				3BA57F131E3322370002015D /* SongCrypt */,
 				3B9CADC21E331D54009DBA39 /* Products */,
+				3B19ED231E33667C006BBA93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -350,6 +394,7 @@
 					"$(PROJECT_DIR)/Superpowered",
 					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryansullivan.SongCrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -372,6 +417,7 @@
 					"$(PROJECT_DIR)/Superpowered",
 					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryansullivan.SongCrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";

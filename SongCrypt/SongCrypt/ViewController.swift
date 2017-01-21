@@ -11,11 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var playPause: UIButton!
-
+    var songEncoder:SongEncoder!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var songEncoder = SongEncoder()
-        songEncoder.togglePlayback()
+        songEncoder = SongEncoder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +24,8 @@ class ViewController: UIViewController {
 
     
     @IBAction func togglePlayPause(_ sender: UIButton) {
-        
+        songEncoder.togglePlayback()
+        print("Hi");
     }
 }
 
