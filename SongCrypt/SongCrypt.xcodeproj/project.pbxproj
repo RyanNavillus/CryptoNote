@@ -7,23 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B9CADC51E331D54009DBA39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9CADC41E331D54009DBA39 /* AppDelegate.swift */; };
-		3B9CADC71E331D54009DBA39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9CADC61E331D54009DBA39 /* ViewController.swift */; };
-		3B9CADCA1E331D54009DBA39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9CADC81E331D54009DBA39 /* Main.storyboard */; };
-		3B9CADCD1E331D54009DBA39 /* SongCrypt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B9CADCB1E331D54009DBA39 /* SongCrypt.xcdatamodeld */; };
-		3B9CADCF1E331D54009DBA39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B9CADCE1E331D54009DBA39 /* Assets.xcassets */; };
-		3B9CADD21E331D54009DBA39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9CADD01E331D54009DBA39 /* LaunchScreen.storyboard */; };
+		3B9CADDC1E332036009DBA39 /* SuperpoweredSDK in Resources */ = {isa = PBXBuildFile; fileRef = 3B9CADDB1E332036009DBA39 /* SuperpoweredSDK */; };
+		3BA57F1F1E3322370002015D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA57F141E3322370002015D /* AppDelegate.swift */; };
+		3BA57F201E3322370002015D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA57F151E3322370002015D /* Assets.xcassets */; };
+		3BA57F211E3322370002015D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA57F161E3322370002015D /* LaunchScreen.storyboard */; };
+		3BA57F221E3322370002015D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA57F181E3322370002015D /* Main.storyboard */; };
+		3BA57F231E3322370002015D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BA57F1A1E3322370002015D /* Info.plist */; };
+		3BA57F241E3322370002015D /* SongCrypt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BA57F1B1E3322370002015D /* SongCrypt.xcdatamodeld */; };
+		3BA57F251E3322370002015D /* SongEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA57F1D1E3322370002015D /* SongEncoder.swift */; };
+		3BA57F261E3322370002015D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA57F1E1E3322370002015D /* ViewController.swift */; };
+		3BA57F551E3322420002015D /* SuperpoweredAndroidAudioIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA57F291E3322420002015D /* SuperpoweredAndroidAudioIO.cpp */; };
+		3BA57F561E3322420002015D /* libSuperpoweredAndroidarm64-v8a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA57F2C1E3322420002015D /* libSuperpoweredAndroidarm64-v8a.a */; };
+		3BA57F571E3322420002015D /* libSuperpoweredAndroidarmeabi-v7a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA57F2D1E3322420002015D /* libSuperpoweredAndroidarmeabi-v7a.a */; };
+		3BA57F581E3322420002015D /* libSuperpoweredAndroidx86.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA57F2E1E3322420002015D /* libSuperpoweredAndroidx86.a */; };
+		3BA57F591E3322420002015D /* libSuperpoweredAndroidx86_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA57F2F1E3322420002015D /* libSuperpoweredAndroidx86_64.a */; };
+		3BA57F5A1E3322420002015D /* libSuperpoweredAudioIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA57F301E3322420002015D /* libSuperpoweredAudioIOS.a */; };
+		3BA57F5B1E3322420002015D /* libSuperpoweredAudioOSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA57F311E3322420002015D /* libSuperpoweredAudioOSX.a */; };
+		3BA57F5C1E3322420002015D /* libSuperpoweredAudiotvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA57F321E3322420002015D /* libSuperpoweredAudiotvOS.a */; };
+		3BA57F5D1E3322420002015D /* SuperpoweredIOSAudioIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BA57F441E3322420002015D /* SuperpoweredIOSAudioIO.mm */; };
+		3BA57F5E1E3322420002015D /* SuperpoweredNBandEQ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA57F471E3322420002015D /* SuperpoweredNBandEQ.cpp */; };
+		3BA57F5F1E3322420002015D /* SuperpoweredOSXAudioIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BA57F4A1E3322420002015D /* SuperpoweredOSXAudioIO.mm */; };
+		3BA57F601E3322420002015D /* SuperpoweredtvOSAudioIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BA57F531E3322420002015D /* SuperpoweredtvOSAudioIO.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B9CADC11E331D54009DBA39 /* SongCrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongCrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B9CADC41E331D54009DBA39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B9CADC61E331D54009DBA39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3B9CADC91E331D54009DBA39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3B9CADCC1E331D54009DBA39 /* SongCrypt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SongCrypt.xcdatamodel; sourceTree = "<group>"; };
-		3B9CADCE1E331D54009DBA39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3B9CADD11E331D54009DBA39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3B9CADD31E331D54009DBA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B9CADDB1E332036009DBA39 /* SuperpoweredSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SuperpoweredSDK; path = /Users/rps214/Documents/Development/SongCrypt/SongCrypt/SuperpoweredSDK; sourceTree = "<absolute>"; };
+		3BA57F141E3322370002015D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BA57F151E3322370002015D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BA57F171E3322370002015D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BA57F191E3322370002015D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BA57F1A1E3322370002015D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA57F1C1E3322370002015D /* SongCrypt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SongCrypt.xcdatamodel; sourceTree = "<group>"; };
+		3BA57F1D1E3322370002015D /* SongEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongEncoder.swift; sourceTree = "<group>"; };
+		3BA57F1E1E3322370002015D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BA57F291E3322420002015D /* SuperpoweredAndroidAudioIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SuperpoweredAndroidAudioIO.cpp; sourceTree = "<group>"; };
+		3BA57F2A1E3322420002015D /* SuperpoweredAndroidAudioIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredAndroidAudioIO.h; sourceTree = "<group>"; };
+		3BA57F2B1E3322420002015D /* SuperpoweredUSBAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredUSBAudio.h; sourceTree = "<group>"; };
+		3BA57F2C1E3322420002015D /* libSuperpoweredAndroidarm64-v8a.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libSuperpoweredAndroidarm64-v8a.a"; sourceTree = "<group>"; };
+		3BA57F2D1E3322420002015D /* libSuperpoweredAndroidarmeabi-v7a.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libSuperpoweredAndroidarmeabi-v7a.a"; sourceTree = "<group>"; };
+		3BA57F2E1E3322420002015D /* libSuperpoweredAndroidx86.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSuperpoweredAndroidx86.a; sourceTree = "<group>"; };
+		3BA57F2F1E3322420002015D /* libSuperpoweredAndroidx86_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSuperpoweredAndroidx86_64.a; sourceTree = "<group>"; };
+		3BA57F301E3322420002015D /* libSuperpoweredAudioIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSuperpoweredAudioIOS.a; sourceTree = "<group>"; };
+		3BA57F311E3322420002015D /* libSuperpoweredAudioOSX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSuperpoweredAudioOSX.a; sourceTree = "<group>"; };
+		3BA57F321E3322420002015D /* libSuperpoweredAudiotvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSuperpoweredAudiotvOS.a; sourceTree = "<group>"; };
+		3BA57F331E3322420002015D /* Superpowered3BandEQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Superpowered3BandEQ.h; sourceTree = "<group>"; };
+		3BA57F341E3322420002015D /* SuperpoweredAdvancedAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredAdvancedAudioPlayer.h; sourceTree = "<group>"; };
+		3BA57F351E3322420002015D /* SuperpoweredAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredAnalyzer.h; sourceTree = "<group>"; };
+		3BA57F361E3322420002015D /* SuperpoweredAudioBuffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredAudioBuffers.h; sourceTree = "<group>"; };
+		3BA57F371E3322420002015D /* SuperpoweredBandpassFilterbank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredBandpassFilterbank.h; sourceTree = "<group>"; };
+		3BA57F381E3322420002015D /* SuperpoweredClipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredClipper.h; sourceTree = "<group>"; };
+		3BA57F391E3322420002015D /* SuperpoweredCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredCompressor.h; sourceTree = "<group>"; };
+		3BA57F3A1E3322420002015D /* SuperpoweredCPU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredCPU.h; sourceTree = "<group>"; };
+		3BA57F3B1E3322420002015D /* SuperpoweredDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredDecoder.h; sourceTree = "<group>"; };
+		3BA57F3C1E3322420002015D /* SuperpoweredEcho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredEcho.h; sourceTree = "<group>"; };
+		3BA57F3D1E3322420002015D /* SuperpoweredFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredFFT.h; sourceTree = "<group>"; };
+		3BA57F3E1E3322420002015D /* SuperpoweredFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredFilter.h; sourceTree = "<group>"; };
+		3BA57F3F1E3322420002015D /* SuperpoweredFlanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredFlanger.h; sourceTree = "<group>"; };
+		3BA57F401E3322420002015D /* SuperpoweredFrequencyDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredFrequencyDomain.h; sourceTree = "<group>"; };
+		3BA57F411E3322420002015D /* SuperpoweredFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredFX.h; sourceTree = "<group>"; };
+		3BA57F421E3322420002015D /* SuperpoweredGate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredGate.h; sourceTree = "<group>"; };
+		3BA57F431E3322420002015D /* SuperpoweredIOSAudioIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredIOSAudioIO.h; sourceTree = "<group>"; };
+		3BA57F441E3322420002015D /* SuperpoweredIOSAudioIO.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SuperpoweredIOSAudioIO.mm; sourceTree = "<group>"; };
+		3BA57F451E3322420002015D /* SuperpoweredLimiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredLimiter.h; sourceTree = "<group>"; };
+		3BA57F461E3322420002015D /* SuperpoweredMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredMixer.h; sourceTree = "<group>"; };
+		3BA57F471E3322420002015D /* SuperpoweredNBandEQ.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SuperpoweredNBandEQ.cpp; sourceTree = "<group>"; };
+		3BA57F481E3322420002015D /* SuperpoweredNBandEQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredNBandEQ.h; sourceTree = "<group>"; };
+		3BA57F491E3322420002015D /* SuperpoweredOSXAudioIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredOSXAudioIO.h; sourceTree = "<group>"; };
+		3BA57F4A1E3322420002015D /* SuperpoweredOSXAudioIO.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SuperpoweredOSXAudioIO.mm; sourceTree = "<group>"; };
+		3BA57F4B1E3322420002015D /* SuperpoweredRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredRecorder.h; sourceTree = "<group>"; };
+		3BA57F4C1E3322420002015D /* SuperpoweredResampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredResampler.h; sourceTree = "<group>"; };
+		3BA57F4D1E3322420002015D /* SuperpoweredReverb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredReverb.h; sourceTree = "<group>"; };
+		3BA57F4E1E3322420002015D /* SuperpoweredRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredRoll.h; sourceTree = "<group>"; };
+		3BA57F4F1E3322420002015D /* SuperpoweredSimple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredSimple.h; sourceTree = "<group>"; };
+		3BA57F501E3322420002015D /* SuperpoweredSpatializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredSpatializer.h; sourceTree = "<group>"; };
+		3BA57F511E3322420002015D /* SuperpoweredTimeStretching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredTimeStretching.h; sourceTree = "<group>"; };
+		3BA57F521E3322420002015D /* SuperpoweredtvOSAudioIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredtvOSAudioIO.h; sourceTree = "<group>"; };
+		3BA57F531E3322420002015D /* SuperpoweredtvOSAudioIO.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SuperpoweredtvOSAudioIO.mm; sourceTree = "<group>"; };
+		3BA57F541E3322420002015D /* SuperpoweredWhoosh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredWhoosh.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +92,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA57F5C1E3322420002015D /* libSuperpoweredAudiotvOS.a in Frameworks */,
+				3BA57F5B1E3322420002015D /* libSuperpoweredAudioOSX.a in Frameworks */,
+				3BA57F561E3322420002015D /* libSuperpoweredAndroidarm64-v8a.a in Frameworks */,
+				3BA57F591E3322420002015D /* libSuperpoweredAndroidx86_64.a in Frameworks */,
+				3BA57F581E3322420002015D /* libSuperpoweredAndroidx86.a in Frameworks */,
+				3BA57F5A1E3322420002015D /* libSuperpoweredAudioIOS.a in Frameworks */,
+				3BA57F571E3322420002015D /* libSuperpoweredAndroidarmeabi-v7a.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +108,8 @@
 		3B9CADB81E331D54009DBA39 = {
 			isa = PBXGroup;
 			children = (
-				3B9CADC31E331D54009DBA39 /* SongCrypt */,
+				3BA57F271E3322420002015D /* Superpowered */,
+				3BA57F131E3322370002015D /* SongCrypt */,
 				3B9CADC21E331D54009DBA39 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,18 +122,78 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B9CADC31E331D54009DBA39 /* SongCrypt */ = {
+		3BA57F131E3322370002015D /* SongCrypt */ = {
 			isa = PBXGroup;
 			children = (
-				3B9CADC41E331D54009DBA39 /* AppDelegate.swift */,
-				3B9CADC61E331D54009DBA39 /* ViewController.swift */,
-				3B9CADC81E331D54009DBA39 /* Main.storyboard */,
-				3B9CADCE1E331D54009DBA39 /* Assets.xcassets */,
-				3B9CADD01E331D54009DBA39 /* LaunchScreen.storyboard */,
-				3B9CADD31E331D54009DBA39 /* Info.plist */,
-				3B9CADCB1E331D54009DBA39 /* SongCrypt.xcdatamodeld */,
+				3BA57F141E3322370002015D /* AppDelegate.swift */,
+				3BA57F151E3322370002015D /* Assets.xcassets */,
+				3BA57F161E3322370002015D /* LaunchScreen.storyboard */,
+				3BA57F181E3322370002015D /* Main.storyboard */,
+				3BA57F1A1E3322370002015D /* Info.plist */,
+				3BA57F1B1E3322370002015D /* SongCrypt.xcdatamodeld */,
+				3BA57F1D1E3322370002015D /* SongEncoder.swift */,
+				3BA57F1E1E3322370002015D /* ViewController.swift */,
 			);
 			path = SongCrypt;
+			sourceTree = "<group>";
+		};
+		3BA57F271E3322420002015D /* Superpowered */ = {
+			isa = PBXGroup;
+			children = (
+				3BA57F281E3322420002015D /* AndroidIO */,
+				3BA57F2C1E3322420002015D /* libSuperpoweredAndroidarm64-v8a.a */,
+				3BA57F2D1E3322420002015D /* libSuperpoweredAndroidarmeabi-v7a.a */,
+				3BA57F2E1E3322420002015D /* libSuperpoweredAndroidx86.a */,
+				3BA57F2F1E3322420002015D /* libSuperpoweredAndroidx86_64.a */,
+				3BA57F301E3322420002015D /* libSuperpoweredAudioIOS.a */,
+				3BA57F311E3322420002015D /* libSuperpoweredAudioOSX.a */,
+				3BA57F321E3322420002015D /* libSuperpoweredAudiotvOS.a */,
+				3BA57F331E3322420002015D /* Superpowered3BandEQ.h */,
+				3BA57F341E3322420002015D /* SuperpoweredAdvancedAudioPlayer.h */,
+				3BA57F351E3322420002015D /* SuperpoweredAnalyzer.h */,
+				3BA57F361E3322420002015D /* SuperpoweredAudioBuffers.h */,
+				3BA57F371E3322420002015D /* SuperpoweredBandpassFilterbank.h */,
+				3BA57F381E3322420002015D /* SuperpoweredClipper.h */,
+				3BA57F391E3322420002015D /* SuperpoweredCompressor.h */,
+				3BA57F3A1E3322420002015D /* SuperpoweredCPU.h */,
+				3BA57F3B1E3322420002015D /* SuperpoweredDecoder.h */,
+				3BA57F3C1E3322420002015D /* SuperpoweredEcho.h */,
+				3BA57F3D1E3322420002015D /* SuperpoweredFFT.h */,
+				3BA57F3E1E3322420002015D /* SuperpoweredFilter.h */,
+				3BA57F3F1E3322420002015D /* SuperpoweredFlanger.h */,
+				3BA57F401E3322420002015D /* SuperpoweredFrequencyDomain.h */,
+				3BA57F411E3322420002015D /* SuperpoweredFX.h */,
+				3BA57F421E3322420002015D /* SuperpoweredGate.h */,
+				3BA57F431E3322420002015D /* SuperpoweredIOSAudioIO.h */,
+				3BA57F441E3322420002015D /* SuperpoweredIOSAudioIO.mm */,
+				3BA57F451E3322420002015D /* SuperpoweredLimiter.h */,
+				3BA57F461E3322420002015D /* SuperpoweredMixer.h */,
+				3BA57F471E3322420002015D /* SuperpoweredNBandEQ.cpp */,
+				3BA57F481E3322420002015D /* SuperpoweredNBandEQ.h */,
+				3BA57F491E3322420002015D /* SuperpoweredOSXAudioIO.h */,
+				3BA57F4A1E3322420002015D /* SuperpoweredOSXAudioIO.mm */,
+				3BA57F4B1E3322420002015D /* SuperpoweredRecorder.h */,
+				3BA57F4C1E3322420002015D /* SuperpoweredResampler.h */,
+				3BA57F4D1E3322420002015D /* SuperpoweredReverb.h */,
+				3BA57F4E1E3322420002015D /* SuperpoweredRoll.h */,
+				3BA57F4F1E3322420002015D /* SuperpoweredSimple.h */,
+				3BA57F501E3322420002015D /* SuperpoweredSpatializer.h */,
+				3BA57F511E3322420002015D /* SuperpoweredTimeStretching.h */,
+				3BA57F521E3322420002015D /* SuperpoweredtvOSAudioIO.h */,
+				3BA57F531E3322420002015D /* SuperpoweredtvOSAudioIO.mm */,
+				3BA57F541E3322420002015D /* SuperpoweredWhoosh.h */,
+			);
+			path = Superpowered;
+			sourceTree = "<group>";
+		};
+		3BA57F281E3322420002015D /* AndroidIO */ = {
+			isa = PBXGroup;
+			children = (
+				3BA57F291E3322420002015D /* SuperpoweredAndroidAudioIO.cpp */,
+				3BA57F2A1E3322420002015D /* SuperpoweredAndroidAudioIO.h */,
+				3BA57F2B1E3322420002015D /* SuperpoweredUSBAudio.h */,
+			);
+			path = AndroidIO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +255,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B9CADD21E331D54009DBA39 /* LaunchScreen.storyboard in Resources */,
-				3B9CADCF1E331D54009DBA39 /* Assets.xcassets in Resources */,
-				3B9CADCA1E331D54009DBA39 /* Main.storyboard in Resources */,
+				3BA57F211E3322370002015D /* LaunchScreen.storyboard in Resources */,
+				3BA57F201E3322370002015D /* Assets.xcassets in Resources */,
+				3B9CADDC1E332036009DBA39 /* SuperpoweredSDK in Resources */,
+				3BA57F231E3322370002015D /* Info.plist in Resources */,
+				3BA57F221E3322370002015D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,29 +270,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B9CADC71E331D54009DBA39 /* ViewController.swift in Sources */,
-				3B9CADCD1E331D54009DBA39 /* SongCrypt.xcdatamodeld in Sources */,
-				3B9CADC51E331D54009DBA39 /* AppDelegate.swift in Sources */,
+				3BA57F551E3322420002015D /* SuperpoweredAndroidAudioIO.cpp in Sources */,
+				3BA57F5D1E3322420002015D /* SuperpoweredIOSAudioIO.mm in Sources */,
+				3BA57F5F1E3322420002015D /* SuperpoweredOSXAudioIO.mm in Sources */,
+				3BA57F1F1E3322370002015D /* AppDelegate.swift in Sources */,
+				3BA57F5E1E3322420002015D /* SuperpoweredNBandEQ.cpp in Sources */,
+				3BA57F251E3322370002015D /* SongEncoder.swift in Sources */,
+				3BA57F601E3322420002015D /* SuperpoweredtvOSAudioIO.mm in Sources */,
+				3BA57F261E3322370002015D /* ViewController.swift in Sources */,
+				3BA57F241E3322370002015D /* SongCrypt.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3B9CADC81E331D54009DBA39 /* Main.storyboard */ = {
+		3BA57F161E3322370002015D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3B9CADC91E331D54009DBA39 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3B9CADD01E331D54009DBA39 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B9CADD11E331D54009DBA39 /* Base */,
+				3BA57F171E3322370002015D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3BA57F181E3322370002015D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BA57F191E3322370002015D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -266,6 +403,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SongCrypt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuperpoweredSDK/Superpowered",
+					"$(PROJECT_DIR)/Superpowered",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryansullivan.SongCrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -278,6 +420,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SongCrypt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuperpoweredSDK/Superpowered",
+					"$(PROJECT_DIR)/Superpowered",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryansullivan.SongCrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -303,16 +450,17 @@
 				3B9CADD81E331D54009DBA39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3B9CADCB1E331D54009DBA39 /* SongCrypt.xcdatamodeld */ = {
+		3BA57F1B1E3322370002015D /* SongCrypt.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3B9CADCC1E331D54009DBA39 /* SongCrypt.xcdatamodel */,
+				3BA57F1C1E3322370002015D /* SongCrypt.xcdatamodel */,
 			);
-			currentVersion = 3B9CADCC1E331D54009DBA39 /* SongCrypt.xcdatamodel */;
+			currentVersion = 3BA57F1C1E3322370002015D /* SongCrypt.xcdatamodel */;
 			path = SongCrypt.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
