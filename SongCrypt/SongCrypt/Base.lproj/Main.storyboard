@@ -22,18 +22,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgT-XF-upM">
-                                <rect key="frame" x="150" y="318" width="75" height="30"/>
+                                <rect key="frame" x="164" y="318" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play/Pause"/>
+                                <state key="normal" title="Unlock"/>
                                 <connections>
-                                    <action selector="togglePlayPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kLr-d3-Zk0"/>
+                                    <action selector="unlock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sep-vH-1KO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aB-Me-0MH">
+                                <rect key="frame" x="55" y="119" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Flanger"/>
+                                <connections>
+                                    <action selector="Flanger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5w6-M7-rx2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9F-9e-vO6">
+                                <rect key="frame" x="288" y="119" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Echo"/>
+                                <connections>
+                                    <action selector="Echo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q2H-jS-iUs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wde-B1-vTZ">
+                                <rect key="frame" x="54" y="483" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reverb"/>
+                                <connections>
+                                    <action selector="Reverb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RYM-PN-qO7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFH-W3-MNw">
+                                <rect key="frame" x="296" y="483" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Roll"/>
+                                <connections>
+                                    <action selector="Roll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uez-Cx-zxz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="playPause" destination="cgT-XF-upM" id="09s-Sx-fNX"/>
+                        <outlet property="EchoButton" destination="b9F-9e-vO6" id="Apy-JZ-ouZ"/>
+                        <outlet property="FlangerButton" destination="3aB-Me-0MH" id="ZDe-gt-AN7"/>
+                        <outlet property="ReverbButton" destination="wde-B1-vTZ" id="PZL-9q-gFR"/>
+                        <outlet property="RollButton" destination="UFH-W3-MNw" id="VB9-4F-6vP"/>
+                        <outlet property="unlockButton" destination="cgT-XF-upM" id="Bbx-2b-ZqR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -28,6 +28,15 @@
     uint64_t timeUnitsProcessed, maxTime;
     unsigned int lastPositionSeconds, lastSamplerate, samplesProcessed;
 }
+- (void)dealloc {
+    delete player;
+    for (int n = 2; n < NUMFXUNITS; n++) delete effects[n];
+    free(stereoBuffer);
+#if !__has_feature(objc_arc)
+    [output release];
+    [super dealloc];
+#endif
+}
 
 - (bool)toggleFx:(int)index {
     if (index == TIMEPITCHINDEX) {
@@ -49,10 +58,10 @@
     player->togglePlayback();
     if(player->playing == YES)
     {
-        NSLog(@"Playing\n");
+        NSLog(@"Playing:%f\n", player->positionMs);
 
     } else {
-        NSLog(@"Not playing\n");
+        NSLog(@"Not playing:%f\n", player->positionMs);
 
     }
 }
@@ -68,6 +77,7 @@
 
 - (void)interruptionStarted {}
 - (void)recordPermissionRefused {}
+
 - (void)mapChannels:(multiOutputChannelMap *)outputMap inputMap:(multiInputChannelMap *)inputMap externalAudioDeviceName:(NSString *)externalAudioDeviceName outputsAndInputs:(NSString *)outputsAndInputs {}
 
 - (void)interruptionEnded {
@@ -80,11 +90,11 @@ static bool audioProcessing(void *clientdata, float **buffers, unsigned int inpu
     __unsafe_unretained Superpowered *self = (__bridge Superpowered *)clientdata;
     uint64_t startTime = mach_absolute_time();
     
-    if (samplerate != self->lastSamplerate) { // Has samplerate changed?
+    /*if (samplerate != self->lastSamplerate) { // Has samplerate changed?
         self->lastSamplerate = samplerate;
         self->player->setSamplerate(samplerate);
         for (int n = 2; n < NUMFXUNITS; n++) self->effects[n]->setSamplerate(samplerate);
-    };
+    };*/
     
     // We're keeping our Superpowered time-based effects in sync with the player... with one line of code. Not bad, eh?
     ((SuperpoweredRoll *)self->effects[ROLLINDEX])->bpm = ((SuperpoweredFlanger *)self->effects[FLANGERINDEX])->bpm = ((SuperpoweredEcho *)self->effects[DELAYINDEX])->bpm = self->player->currentBpm;
@@ -126,9 +136,30 @@ static bool audioProcessing(void *clientdata, float **buffers, unsigned int inpu
     player->open([[[NSBundle mainBundle] pathForResource:@"track" ofType:@"mp3"] fileSystemRepresentation]);
     player->play(false);
     player->setBpm(124.0f);
+    if (posix_memalign((void **)&stereoBuffer, 16, 4096 + 128) != 0) abort(); // Allocating memory, aligned to 16.
+    SuperpoweredFilter *filter = new SuperpoweredFilter(SuperpoweredFilter_Resonant_Lowpass, 44100);
+    filter->setResonantParameters(1000.0f, 0.1f);
+    effects[FILTERINDEX] = filter;
+    
+    effects[ROLLINDEX] = new SuperpoweredRoll(44100);
+    effects[FLANGERINDEX] = new SuperpoweredFlanger(44100);
+    
+    SuperpoweredEcho *delay = new SuperpoweredEcho(44100);
+    delay->setMix(0.8f);
+    effects[DELAYINDEX] = delay;
+    
+    SuperpoweredReverb *reverb = new SuperpoweredReverb(44100);
+    reverb->setRoomSize(0.5f);
+    reverb->setMix(0.3f);
+    effects[REVERBINDEX] = reverb;
+    
+    Superpowered3BandEQ *eq = new Superpowered3BandEQ(44100);
+    eq->bands[0] = 2.0f;
+    eq->bands[1] = 0.5f;
+    eq->bands[2] = 2.0f;
+    effects[EQINDEX] = eq;
     
     audioIO = [[SuperpoweredIOSAudioIO alloc] initWithDelegate:(id<SuperpoweredIOSAudioIODelegate>)self preferredBufferSize:12 preferredMinimumSamplerate:44100 audioSessionCategory:AVAudioSessionCategoryPlayback channels:2 audioProcessingCallback:audioProcessing clientdata:(__bridge void *)self];
-    //[audioIO start];
     return self;
 }
 

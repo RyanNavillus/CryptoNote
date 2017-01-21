@@ -1,4 +1,4 @@
-#ifdef __OBJC__
+//#ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 
@@ -12,4 +12,4 @@
 #define DELAYINDEX 6
 #define REVERBINDEX 7
 
-#endif
+//#endif

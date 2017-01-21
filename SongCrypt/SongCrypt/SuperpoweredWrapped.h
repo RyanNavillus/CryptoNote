@@ -14,9 +14,12 @@
     bool playing;
     uint64_t avgUnitsPerSecond, maxUnitsPerSecond;
 }
--(id)init;
--(void)togglePlayback;
--(void)toggle;
+- (id)init;
+- (void)togglePlayback;
+- (void)seekTo:(float)percent; // Jump to a specific position.
+- (void)toggle;
+- (bool)toggleFx:(int) index; // Enable/disable fx.
+
 @end
 
 #endif /* SuperpoweredWrapped_h */
